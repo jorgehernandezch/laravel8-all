@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use App\Models\User;
+use Carbon\Carbon;
 
 class UserSeeder extends Seeder
 {
@@ -15,9 +16,17 @@ class UserSeeder extends Seeder
     public function run()
     {
         User::create([
+            'name'      =>  'Root',
+            'email'     =>  'root@root.com',
+            'password'  =>  bcrypt('Root'),
+            'email_verified_at' => Carbon::now()
+        ])->assignRole('root');
+
+        User::create([
             'name'      =>  'Admin',
             'email'     =>  'admin@admin.com',
             'password'  =>  bcrypt('Admin'),
-        ]);
+            'email_verified_at' => Carbon::now()
+        ])->assignRole('admin');
     }
 }
