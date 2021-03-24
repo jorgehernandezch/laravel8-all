@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Mail\WelcomeMailable;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +16,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 Route::get('/', [App\Http\Controllers\Web\HomeController::class, 'index'])->name('web.index');
 
-
-
-
+/*Exemplo de Mailabel */
+Route::get('/bemvindos', function(){
+    $email = new WelcomeMailable;
+    Mail::to('jorge@galpha.co')->send($email);
+});
