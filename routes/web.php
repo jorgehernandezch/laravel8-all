@@ -22,5 +22,5 @@ Route::get('/', [App\Http\Controllers\Web\HomeController::class, 'index'])->name
 /*Exemplo de Mailabel */
 Route::get('/bemvindos', function(){
     $email = new WelcomeMailable;
-    Mail::to('jorge@galpha.co')->send($email);
+    Mail::to('noreply@galpha.co')->send($email);
 });
