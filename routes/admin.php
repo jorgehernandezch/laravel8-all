@@ -13,9 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Auth::routes();
-Route::get('/', [App\Http\Controllers\Web\HomeController::class, 'index'])->name('web.index');
-
-
-
-
+Route::get('/', [App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('dashboard');
