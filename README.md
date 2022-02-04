@@ -2,7 +2,7 @@
 
 ## Comenzando 🚀
 
-_Sigue las siguientes instrucciones para clonar este repositorio en tu máquina local y poder trabajar desde el principio con la plantilla AdminLTE, sistema de Roles y Permisos con Spatie, Envio de Email con Mailable, Verificación de Email y API con JWT Token en Laravel 8 con Livewire._
+_Sigue las siguientes instrucciones para clonar este repositorio en tu máquina local y poder trabajar desde el principio con la plantilla AdminLTE, sistema de Roles y Permisos con Spatie, Envio de Email, Verificación de Email y API con JWT Token en Laravel 8._
 
 ### Pre-requisitos 📋
 
@@ -65,17 +65,12 @@ _Genere una nueva Key para el protecto con_
 php artisan key:generate
 ```
 
-_Corra las migraciones del proyecto con_
+_Corra las migraciones y seeders del proyecto con_
 
 ```
-php artisan migrate
+php artisan migrate --seed
 ```
 
-_Corra los seeder del proyecto con_
-
-```
-php artisan db:seed
-```
 _Corra el proyecto con_
 
 ```
