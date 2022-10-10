@@ -40,16 +40,16 @@ _Clone el repositorio_
 git clone https://github.com/jorgehernandezch/Laravel-8-All.git
 ```
 
-_Instale todas las dependencias del Proyecto con_
+_Instale y actualize todas las dependencias del Proyecto con_
 
 ```
-composer install
+composer install y composer update
 ```
 
-_Como el proyecto tiene dependencias en JS instalelas con_
+_Como el proyecto tiene dependencias en JS instalelas y actualizelas con_
 
 ```
-npm install
+npm install e npm update
 ```
 
 _Copie el Archivo .env.example en un archivo nuevo .env con_
@@ -77,7 +77,7 @@ _Corra el proyecto con_
 php artisan serve
 ```
 
-_Si todo está correcto puede acceder al proyecto en la dirección http://localhost:8000_ con el Usuario root@root.com - Root
+_Si todo está correcto puede acceder al proyecto en la dirección http://localhost:8000 con el Usuario root@root.com - Root. También puede verificar si la API está funcionando en la dirección http://localhost:8000/api/users, el sistema enviará un mensaje en json con el error de no autorizado._
 
 
 ---
