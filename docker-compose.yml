@@ -7,6 +7,7 @@ services:
       dockerfile: Dockerfile
       args:
         WWWGROUP: '${WWWGROUP}'
+        NODE_VERSION: '16'
     image: sail-7.4/app
     extra_hosts:
       - 'host.docker.internal:host-gateway'
